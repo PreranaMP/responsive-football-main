@@ -139,3 +139,34 @@ height: 110px;
 .copyright{
  padding-left: 135px;
 }
+/* media queries */
+/* mobile  */
+@media only screen and (max-width:688px) {
+ .opening-section, .container-two, .logo{
+  align-items: flex-start;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+ }
+ .heading-link{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 40px;
+  flex-wrap: wrap;
+  margin-left: 0%;
+ }
+  .heading{
+font-size: 40px;
+  }
+ 
+ .football-image img{
+  padding-left: 0;
+  width: 90%;
+  height: 350px;
+ }
+ .players{
+  grid-template-columns: repeat(1, 1fr);
+ }
+ 
+}
