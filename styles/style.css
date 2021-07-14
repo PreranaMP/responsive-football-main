@@ -9,12 +9,22 @@ main{
  display: flex;
  justify-content: center;
 }
-/* header section  */
+/* ----------------------
+      header section
+ ------------------------ */
 .opening-section{
  display: flex;
  align-items: center;
  justify-content: center;
  background-color: #2D25A0; 
+}
+.opening-section:hover .football-image{
+transform: scale(1.2);
+transition: transform 2s linear;
+}
+.opening-section:hover .heading-link{
+ transform: scale(1.2);
+transition: transform 2s linear;
 }
 .heading-link{
  display: flex;
@@ -25,10 +35,12 @@ padding-left: 156px;
  font-size: 64px;
  font-family: 'Poppins', sans-serif;
  color: #FFFFFF; 
- 
 width: 485px;
 height: 230px;
+text-shadow: 2px 2px grey;
+
 }
+
 .link{
  display: flex;
  justify-content: space-around;
@@ -39,8 +51,15 @@ height: 230px;
  height: 44px;
 align-items: center;
 background-color: #E02C6D;
-}
 
+}
+.fa-arrow-right{
+ padding-right: 20px;
+ display: none;
+}
+.link:hover .fa-arrow-right{
+ display: block;
+}
 .watch-link a{
  background-color: #E02C6D;
 }
@@ -50,8 +69,11 @@ height: 438px;
 left: 1299.01px;
 top: 153px;
 padding: 135px 140px 86px;
+
 }
-/* players style */
+/* --------------------
+     players style 
+ ----------------------*/
 
 .players{
  display: grid;
